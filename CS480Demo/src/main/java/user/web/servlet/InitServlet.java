@@ -50,6 +50,7 @@ public class InitServlet extends HttpServlet {
 		
 		InitDao newObj = new InitDao();
 		newObj.initDB();
+		request.getRequestDispatcher("/jsps/main.jsp").forward(request, response);
 	}
 
 }

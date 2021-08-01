@@ -29,14 +29,37 @@ public class InitDao {
 		   
 		    	
 			statement = connect.createStatement();
-			statement.executeUpdate("DROP TABLE IF EXISTS Student");
+			statement.executeUpdate("DROP TABLE IF EXISTS armor");
+			statement.executeUpdate("DROP TABLE IF EXISTS weapon");
+			statement.executeUpdate("DROP TABLE IF EXISTS pCharacter");
 			
-			String sqlstmt = "CREATE TABLE IF NOT EXISTS Student" +
-							"(id INTEGER not NULL AUTO_INCREMENT, " +
-							" Name VARCHAR(20), " +
-							" Address VARCHAR(50), " +
-							" Status VARCHAR(10), " +
-							" PRIMARY KEY (id))";
+			
+			String sqlstmt = " create table if not exists armor("
+					+ " armor_name varchar(30) not NULL,"
+					+ " lightLevel integer not null,"
+					+ " armor_type varchar(20),"
+					+ " rarity varchar(15),"
+					+ " slot varchar(15),"
+					+ " id integer not null auto_increment,"
+					+ " primary key(id));";
+			statement.executeUpdate(sqlstmt);
+			
+			sqlstmt = " create table if not exists pCharacter("
+					+ " pClass varchar(10) not NULL,"
+					+ " lightLevel integer not null,"
+					+ " subclass varchar(20),"
+					+ " id integer not null auto_increment,"
+					+ " primary key(id));";
+			statement.executeUpdate(sqlstmt);
+			
+			sqlstmt = " create table if not exists weapon("
+					+ " weapon_name varchar(30) not NULL,"
+					+ " lightLevel integer not null,"
+					+ " weapon_type varchar(20),"
+					+ " rarity varchar(15),"
+					+ " slot varchar(15),"
+					+ " id integer not null auto_increment,"
+					+ " primary key(id));";
 			statement.executeUpdate(sqlstmt);
 		    
 		
@@ -54,6 +77,7 @@ public class InitDao {
 			e.printStackTrace();
 		}
 	}
+	
 	
 	
 }

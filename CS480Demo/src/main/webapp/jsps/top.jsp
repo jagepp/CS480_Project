@@ -53,5 +53,8 @@
 	<a href="<c:url value='/jsps/armor/list.jsp'/>" target="_parent">List Armor</a> 	
 </div>
 
+<div style="font-size: 10pt;">
+	<a href="<c:url value='/jsps/user/initialize.jsp'/>" target="_parent">Init all db's</a>
+</div>
   </body>
 </html>
