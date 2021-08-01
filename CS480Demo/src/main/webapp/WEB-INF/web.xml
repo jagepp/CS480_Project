@@ -15,6 +15,94 @@
   
   <servlet>
     <description></description>
+    <display-name>ArmorServletRegister</display-name>
+    <servlet-name>ArmorServletRegister</servlet-name>
+    <servlet-class>armor.web.servlet.ArmorServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArmorServletRegister</servlet-name>
+    <url-pattern>/ArmorServletRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArmorServletDelete</display-name>
+    <servlet-name>ArmorServletDelete</servlet-name>
+    <servlet-class>armor.web.servlet.ArmorServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArmorServletDelete</servlet-name>
+    <url-pattern>/ArmorServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ArmorServletUpdate</display-name>
+    <servlet-name>ArmorServletUpdate</servlet-name>
+    <servlet-class>armor.web.servlet.ArmorServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArmorServletUpdate</servlet-name>
+    <url-pattern>/ArmorServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>armorListAll</display-name>
+    <servlet-name>armorListAll</servlet-name>
+    <servlet-class>armor.web.servlet.armorListAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>armorListAll</servlet-name>
+    <url-pattern>/armorListAll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>WeaponServletRegister</display-name>
+    <servlet-name>WeaponServletRegister</servlet-name>
+    <servlet-class>weapon.web.servlet.WeaponServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WeaponServletRegister</servlet-name>
+    <url-pattern>/WeaponServletRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>WeaponServletDelete</display-name>
+    <servlet-name>WeaponServletDelete</servlet-name>
+    <servlet-class>weapon.web.servlet.WeaponServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WeaponServletDelete</servlet-name>
+    <url-pattern>/WeaponServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>WeaponServletUpdate</display-name>
+    <servlet-name>WeaponServletUpdate</servlet-name>
+    <servlet-class>weapon.web.servlet.WeaponServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WeaponServletUpdate</servlet-name>
+    <url-pattern>/WeaponServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>weaponListAll</display-name>
+    <servlet-name>weaponListAll</servlet-name>
+    <servlet-class>weapon.web.servlet.weaponListAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>weaponListAll</servlet-name>
+    <url-pattern>/weaponListAll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>CharacterServletRegister</display-name>
     <servlet-name>CharacterServletRegister</servlet-name>
     <servlet-class>character.web.servlet.CharacterServletRegister</servlet-class>
