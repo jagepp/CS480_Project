@@ -23,5 +23,7 @@
   
   <body>
     <h1>Welcome to the D2 Inventory</h1>
+    
+	
   </body>
 </html>

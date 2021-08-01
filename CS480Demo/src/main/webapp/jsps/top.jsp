@@ -33,19 +33,25 @@
   <body>
 <h1 style="text-align: center;">CS480</h1>
 <div style="font-size: 10pt;">
-	<c:choose>
-		<c:when test="${empty sessionScope.session_user }">
-			<a href="<c:url value='/jsps/character/regist.jsp'/>" target="_parent">Add Character</a>|&nbsp;
-			<a href="<c:url value='/jsps/character/update.jsp'/>" target="_parent">Update Character</a> |&nbsp;
-			<a href="<c:url value='/jsps/character/del.jsp'/>" target="_parent">Delete Character</a> |&nbsp;
-			<a href="<c:url value='/jsps/character/list.jsp'/>" target="_parent">List Characters</a> |&nbsp;
-			<a href="<c:url value='/jsps/user/initialize.jsp'/>" target="_parent">Initialize Database</a> 	 	
-		</c:when>
-		<c:otherwise>
-			<a href="<c:url value='/jsps/item.jsp'/>" target="body">Query Result</a>&nbsp;&nbsp;
-		</c:otherwise>
-	</c:choose>
-
+	<a href="<c:url value='/jsps/character/regist.jsp'/>" target="_parent">Add Character</a>|&nbsp;
+	<a href="<c:url value='/jsps/character/update.jsp'/>" target="_parent">Update Character</a> |&nbsp;
+	<a href="<c:url value='/jsps/character/del.jsp'/>" target="_parent">Delete Character</a> |&nbsp;
+	<a href="<c:url value='/jsps/character/list.jsp'/>" target="_parent">List Characters</a> 	 		
 </div>
+
+<div style="font-size: 10pt;">
+	<a href="<c:url value='/jsps/weapon/regist.jsp'/>" target="_parent">Add Weapon</a>|&nbsp;
+	<a href="<c:url value='/jsps/weapon/update.jsp'/>" target="_parent">Update Weapon</a> |&nbsp;
+	<a href="<c:url value='/jsps/weapon/del.jsp'/>" target="_parent">Delete Weapon</a> |&nbsp;
+	<a href="<c:url value='/jsps/weapon/list.jsp'/>" target="_parent">List Weapon</a> 	
+</div>
+
+<div style="font-size: 10pt;">
+	<a href="<c:url value='/jsps/armor/regist.jsp'/>" target="_parent">Add Armor</a>|&nbsp;
+	<a href="<c:url value='/jsps/armor/update.jsp'/>" target="_parent">Update Armor</a> |&nbsp;
+	<a href="<c:url value='/jsps/armor/del.jsp'/>" target="_parent">Delete Armor</a> |&nbsp;
+	<a href="<c:url value='/jsps/armor/list.jsp'/>" target="_parent">List Armor</a> 	
+</div>
+
   </body>
 </html>
